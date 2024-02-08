@@ -63,7 +63,17 @@
 
     <script src="script.js"></script>
 
-    <a href="https://twitter.com/intent/tweet?url=URLを入力してください&text=ツイートするテキストを入力してください" target="_blank" rel="noopener noreferrer">結果をTwitter(旧Twitter)で共有</a>
+    <!-- ここにボタンを配置 -->
+    <button id="tweetButton">Twitter(旧Twitter)でシェア</button>
+
+    <script>
+        document.getElementById('tweetButton').addEventListener('click', function() {
+            var tweetText = "最大オルタ力は 16分換算で BPM " + maxBPM + "です #I_AM_ALTERNATER";
+            var thisURL = ""
+            var twitterUrl = "https://twitter.com/intent/tweet?url=https://grners.github.io/Alternater/&text=" + encodeURIComponent(tweetText);
+            window.open(twitterUrl, '_blank');
+        });
+    </script>
 
     <p>
         更新履歴<br>

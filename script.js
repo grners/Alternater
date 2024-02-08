@@ -126,7 +126,14 @@ function UpdateColorBox(inputByte){
     }
 }
 
+//出典：https://w.atwiki.jp/gtdr/pages/23.html と BEMANIWiki
 const bpmRanges = [
+    { minBPM: 120, maxBPM: 130, texts: ["花の唄", "永", "等"] },
+    { minBPM: 130, maxBPM: 140, texts: ["r.p.m.RED", "GORI GORI", "REFLEXES MANIPULATION", "等"] },
+    { minBPM: 140, maxBPM: 150, texts: ["GET IT ALL", "Limitless Possibility", "MIND ERUPTION", "等"] },
+    { minBPM: 150, maxBPM: 160, texts: ["MODEL DD6", "Terra Car", "BLACK JACKAL", "等"] },
+    { minBPM: 160, maxBPM: 170, texts: ["愛と勇気の三度笠ポン太", "Synergy For Angels", "等"] },
+    { minBPM: 170, maxBPM: 180, texts: ["Hyperseven type K", "Link up", "ECLIPSE 2", "等"] },
     { minBPM: 180, maxBPM: 184, texts: ["MAD BLAST", "Strike Party!!!", "たまゆら", "等"] },
     { minBPM: 184, maxBPM: 190, texts: ["ancient breeze", "DESTINY", "等"] },
     { minBPM: 190, maxBPM: 200, texts: ["SUZY AND THE TIME MACHINE", "お米の美味しい炊き方、そしてお米を食べることによるその効果。", "等"] },
