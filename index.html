@@ -2,15 +2,74 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World Sample</title>
+    <title>I AM ALTERNATER</title>
 </head>
-<body>
-    <h1>Hello World with JavaScript</h1>
-    <p id="helloWorld"></p>
 
-    <script>
-        // JavaScriptを使用して"Hello World"メッセージを表示
-        document.getElementById('helloWorld').innerText = 'Hello World!';
-    </script>
+<style>
+    .buttonBox {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        display: inline-block;
+        margin: 3px;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .pickBox {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #000;
+        display: inline-block;
+        margin: 5px;
+        margin-left: 25px;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .inputLog {
+    resize: none; /* テキストエリアのサイズ変更を無効にする */
+}
+</style>
+
+<body>
+    <h1>オルタの速度測るくん</h1>
+    <p>※コントローラーが壊れないように気を付けましょう</p><br>
+
+    <p>↓最初にこれをクリックし、それらしいコントローラー(例：「Guitar Game Controller」)を選択</p>
+    <button id="connect" style="width: 200px; height: 50px;">コントローラーに接続</button><br>
+    <!-- <button id="clear">Clear</button><br> -->
+    <textarea id="inputLog" rows="1" cols="70" class="inputLog"></textarea><br>
+
+    <div id="R" class="buttonBox"></div>
+    <div id="G" class="buttonBox"></div>
+    <div id="B" class="buttonBox"></div>
+    <div id="Y" class="buttonBox"></div>
+    <div id="P" class="buttonBox"></div>
+    <div id="Pick" class="pickBox"></div><br>
+
+    <p>現在:BPM <textarea id="currentSpeed" rows="1" cols="5" style="font-size: 20px" class="inputLog" readonly></textarea>の16分    
+    <p>最高:BPM <textarea id="maxSpeed" rows="1" cols="5" style="font-size: 20px" class="inputLog" readonly></textarea>の16分</p>
+    
+    <button id="clear">記録を消去</button><br>
+
+    <p>最高速近辺のオルタがある曲<br>
+    <textarea id="musicSample" rows="10" cols="70" class="inputLog" readonly></textarea>
+    </p>
+
+    <script src="script.js"></script>
+
+    <a href="https://twitter.com/intent/tweet?url=URLを入力してください&text=ツイートするテキストを入力してください" target="_blank" rel="noopener noreferrer">結果をTwitter(旧Twitter)で共有</a>
+
+    <p>
+        更新履歴<br>
+        2024/02/09:公開
+    </p>
+
+
 </body>
 </html>
